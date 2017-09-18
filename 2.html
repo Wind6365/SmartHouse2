@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>SmartHouse</title>
+   <script src="./2.js"></script>
+   <link rel="stylesheet" type="text/css" href="./2.css"/>
+</head>
+<body>
+   <div class="ramka">
+      <span class="hol">Холодильник</span>
+         <div class="temp"> 
+            <input type="button" value="On"  id="on" onclick=turnOn()></input>
+            <input type="button" value="Off" id="off" onclick=turnOff()></input>         
+         <p>
+            <input type="button" value="+"  onclick=plus()></input>
+            <input type="button" value="-"  onclick=minus()></input>
+            Температура:<span id="x">0</span>
+         </p>
+         
+         </div>
+   </div>
+   <div class="ramka2">
+      <div class="hol">Жалюзи</div>
+         <input type="button" value="Open" id="openCurt"  onclick=openCurtains()>
+         <input type="button" value="Close" id="closeCurt" onclick=closeCurtains()>
+   </div>
+</body>
+</html>
